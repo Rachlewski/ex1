@@ -57,7 +57,7 @@ int main() {
   If the number is even - print 1, else - print 0. */
   printf("Please enter a number:\n");
   scanf("%d", &num);
-  printf("%d\n",(num & 1));
+  printf("%d\n", ((num & 1) ^ 1));
   
   // 3, 5, 7, 11
   printf("\n3, 5, 7, 11:\n");
