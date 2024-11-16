@@ -1,5 +1,5 @@
 /******************
-Name:
+Name:Yoav
 ID:
 Assignment:
 *******************/
@@ -13,7 +13,16 @@ int main() {
   printf("What bit:\n");
   /*Scan two integers (representing number and a position)
   Print the bit in this position. */
-  
+  printf("Please enter a number:\n");
+  int num;
+  scanf("%d", &num);
+  printf("Please enter a position:\n");
+  int position;
+  scanf("%d", &position);
+  int shifted = num >> position;
+  int res = shifted & 1;
+  printf("The bit in position %d is: %d\n", position, res);
+
   // Set bit
   printf("\nSet bit:\n");
   /*Scan two integers (representing number and a position)
@@ -21,6 +30,14 @@ int main() {
   Print the output
   Now make sure it's "off" (equal to 0)
   Print the output */
+  printf("Please enter a number:\n");
+  scanf("%d", &num);
+  printf("Please enter a position:\n");
+  scanf("%d", &position);
+  int mask1 = (1 << position);
+  int mask0 = (~mask1);
+  printf("Number with bit %d set to 1: %d\n", position,(mask1 | num));
+  printf("Number with bit %d set to 0: %d\n", position,(mask0 & num));
 
   // Toggle bit
   printf("\nToggle bit:\n");
