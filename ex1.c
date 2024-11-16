@@ -21,7 +21,7 @@ int main() {
   scanf("%d", &position);
   int shifted = num >> position;
   int res = shifted & 1;
-  printf("The bit in position %d is: %d\n", position, res);
+  printf("The bit in position %d of number %d is: %d\n", position,num, res);
 
   // Set bit
   printf("\nSet bit:\n");
