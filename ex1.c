@@ -1,7 +1,7 @@
 /******************
-Name:Yoav
-ID:
-Assignment:
+Name:Yoav Rachlweski
+ID:327695169
+Assignment:1
 *******************/
 #include <stdio.h>
 
@@ -44,7 +44,18 @@ int main() {
   /*Scan two integers (representing number and a position)
   Toggle the bit in this position
   Print the new number */
-  
+  printf("Please enter a number:\n");
+  scanf("%d", &num);
+  printf("Please enter a position:\n");
+  scanf("%d", &position);
+  int togMask = (1 << position);
+  printf("Number with bit %d toggled: %d",position,(num ^ togMask));
+
+
+
+
+
+
   // Even - Odd
   printf("\nEven - Odd:\n");
   /* Scan an integer
