@@ -49,17 +49,15 @@ int main() {
   printf("Please enter a position:\n");
   scanf("%d", &position);
   int togMask = (1 << position);
-  printf("Number with bit %d toggled: %d",position,(num ^ togMask));
-
-
-
-
-
+  printf("Number with bit %d toggled: %d\n",position,(num ^ togMask));
 
   // Even - Odd
   printf("\nEven - Odd:\n");
   /* Scan an integer
   If the number is even - print 1, else - print 0. */
+  printf("Please enter a number:\n");
+  scanf("%d", &num);
+  printf("%d\n",(num & 1));
   
   // 3, 5, 7, 11
   printf("\n3, 5, 7, 11:\n");
